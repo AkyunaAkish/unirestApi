@@ -1,2 +1,15 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+NYT BOOKS API
+<br>
+<br>
+{{#books}}
+    <article>
+        <h2>{{title}}</h2>
+        by <strong>{{author}}</strong>
+        <img src="{{book_image}}">
+    </article>
+
+{{/books}}
+
+        <!--{{#each books}}-->
+<!--{{this.author}}-->
+        <!--{{/each}}-->
