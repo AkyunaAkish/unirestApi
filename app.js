@@ -30,7 +30,7 @@ app.get('/books', function(req, res) {
       .end(function (response) {
         console.log(response.body.results.books);
           var NYTBooks = response.body.results.books;
-          res.render('index', {books: NYTBooks});
+          res.render('books', {books: NYTBooks});
           //res.end('Done')
       })
 
